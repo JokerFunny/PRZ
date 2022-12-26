@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>annotations</Nullable>
+    <UserSecretsId>b4915838-1883-4386-a6a4-26c1e668220a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
