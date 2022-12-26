@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres:13.7
+    environment:
+      POSTGRES_USER: "pgadmin"
+      POSTGRES_PASSWORD: "pgadmin"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  jotterapi:
+    image: jotterapi
+    container_name: jotterapi
+    build: .
+    depends_on:
+      - postgres
+    ports:
+     - '5000:5000'
+    env_file:
+      - ./jotterapi.env
+    environment:
+      WAIT_HOSTS: postgres:5432
+
+volumes:
+  dbdata:
+    driver: local
