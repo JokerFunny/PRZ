@@ -9,4 +9,4 @@ Lab2 - http://lab2beanstalk-env.eba-efyhrpzp.eu-central-1.elasticbeanstalk.com/,
 
 Lab3 - http://3.64.47.64:5000/test, swagger - http://3.64.47.64:5000/swagger/index.html (ask me to start the application)
 
-Lab4 - ??? TDB (or not)
+Lab4 - deployed locally
